@@ -54,7 +54,6 @@
         background: #555;
     }
      .group{
-        opacity: 1;
         position: absolute;
         left: 50%;
         top:50%;
@@ -63,13 +62,6 @@
         height: 400px;
         overflow: hidden;
 
-    }
-    .people {
-        background: url(people.jpg);
-        background-position: -186px -32px;
-        background-size: 225%;   
-        width: 500px;
-        height: 400px;             
     }
     .picture{
         transition:1s;
@@ -96,27 +88,24 @@
         z-index: 1;
         animation:move  3s linear infinite  ;  
     }  
-    .picture .imgs{
+    .picture .people{
         left: -13px;
         top:0;
         position: absolute;
-        animation:stop  3s linear infinite  ;      
+        animation:stop  3s linear infinite  ;    
+        background: url(people.jpg);
+        background-position: -186px -32px;
+        background-size: 225%;   
+        width: 500px;
+        height: 400px;          
     }     
-    .picture .imgs img
-    {
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-    }
 </style>
 <body>
     <div class="group">
         <div class="picture">               
             <img class="aiming" src="./aiming.png" alt="">
             <div class="go">
-                <span class="imgs">
-                    <div class="people"></div>
-                </span>
+                <div class="people"></div>
             </div>
         </div>
     </div>
